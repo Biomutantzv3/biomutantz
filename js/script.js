@@ -57,6 +57,35 @@ $(document).ready(function(){
 
 
 
+//linking of poster 
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const posters = document.querySelectorAll('.swiper-slide');
+
+        posters.forEach(poster => {
+            poster.addEventListener('click', () => {
+                const targetId = poster.getAttribute('data-target');
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+
 
 
 
