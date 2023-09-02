@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans&display=swap');
+
+
+@font-face {
+  font-family: 'Skygraze';
+  src: url('path-to-skygraze-font.woff2') format('woff2'),
+       url('path-to-skygraze-font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root{
     --red:#FF4F5B;
 }
@@ -393,7 +404,8 @@ header .navbar ul li a:hover{
 .products-preview .preview{
    display: none;
    padding:2rem;
-   text-align: center;
+   text-align: left;
+   
    background: #fff;
    position: relative;
    margin:8rem;
@@ -424,6 +436,7 @@ header .navbar ul li a:hover{
    color:#444;
    padding:.5rem 0;
    font-size: 2.5rem;
+   text-align: center;
 }
 
 .products-preview .preview .stars{
@@ -439,6 +452,7 @@ header .navbar ul li a:hover{
    color:#999;
 }
 
+
 .products-preview .preview p{
    line-height: 1.5;
    padding:1rem 0;
@@ -446,47 +460,76 @@ header .navbar ul li a:hover{
    color:#777;
 }
 
-.products-preview .preview .stars  li {
-   margin-bottom: 0.5rem;
-   font-size: 1.2rem;
-   
-   left: 4rem; /* Adding some space between list items */
+.products-preview .preview .stars ul {
+  margin-left: 0;
+  padding-left: 0;
 }
+
+.products-preview .preview .stars ol {
+  margin-left: 1rem;
+  padding-left: 0;
+  list-style-position: inside; /* Adjust the list item marker position */
+}
+
+
+.products-preview .preview .stars li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  position: relative; /* Add relative positioning for arrow */
+  font-family: 'Skygraze', sans-serif; /* Apply the custom font */
+  padding-left: 2rem; /* Add left padding to create space for the arrow */
+}
+
+.products-preview .preview .stars li:before {
+  margin-right: 10px; /* Adjust the spacing between the arrow and the list item text */
+  position: absolute;
+  left: 1rem; /* Increase the spacing between the arrow and the text */
+}
+
 
 .products-preview .preview .price{
    padding:1rem 0;
+   text-align: center;
    font-size: 2.5rem;
    color:#27ae60;
 }
-
-.products-preview .preview .buttons{
-   display: flex;
-   gap:1.5rem;
-   flex-wrap: wrap;
-   margin-top: 1rem;
+.products-preview .preview .buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
-.products-preview .preview .buttons a{
-   flex:1 1 16rem;
-   padding:1rem;
-   font-size: 1.8rem;
-   color:#444;
-   border:.1rem solid #444;
+.products-preview .preview .buttons a {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: #444;
+  border: .1rem solid #444;
+  position: relative; /* Add relative positioning */
 }
 
-.products-preview .preview .buttons a.cart{
-   background: #444;
-   color:#fff;
+.products-preview .preview .buttons a .fas.fa-phone {
+  position: absolute; /* Add absolute positioning */
+  right: 1rem; /* Adjust the right spacing as needed */
 }
 
-.products-preview .preview .buttons a.cart:hover{
-   background: #111;
+.products-preview .preview .buttons a.cart {
+  background: #444;
+  color: #fff;
 }
 
-.products-preview .preview .buttons a.buy:hover{
-   background: #444;
-   color:#fff;
+.products-preview .preview .buttons a.cart:hover {
+  background: #111;
 }
+
+.products-preview .preview .buttons a.buy:hover {
+  background: #444;
+  color: #fff;
+}
+
 
 
 
