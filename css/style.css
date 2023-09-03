@@ -98,18 +98,23 @@ section{
 }
 
 
-header{
-    width:100%;
+header {
+    width: 100%;
     background: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    top:0; left: 0;
+    top: 0;
+    left: 0;
     z-index: 1000;
-    padding:2.5rem 7%;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding: 2.5rem 7%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    font-family: 'Skygraze', sans-serif; /* Add the 'Skygraze' font here */
 }
+
+/* Your existing CSS for the rest of the header styles remains unchanged */
+
 
 header .logo{
     font-size: 2.5rem;
@@ -168,6 +173,7 @@ header .navbar ul li a:hover{
   max-width: 70rem;
   text-align: center;
   margin: 0 auto;
+  font-family: 'Skygraze', sans-serif;
 }
 
 .home .content img {
