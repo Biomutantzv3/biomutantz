@@ -16,7 +16,7 @@
 }
 
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Skygraze', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
@@ -322,7 +322,6 @@ header .navbar ul li a:hover{
 }
 
 
-
 .about{
     
   background: url(../images/home-bg.jpg) fixed ;
@@ -341,7 +340,7 @@ header .navbar ul li a:hover{
 
 .container .title{
    font-size: 3.5rem;
-   color:white;
+   color:#444;
    margin-bottom: 3rem;
    text-transform: uppercase;
    text-align: center;
@@ -357,14 +356,14 @@ header .navbar ul li a:hover{
    text-align: center;
    padding:3rem 2rem;
    
-   box-shadow: 0 .5rem 1rem ;
-   outline: .1rem solid ;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
    outline-offset: -1.5rem;
    cursor: pointer;
 }
 
 .container .products-container .product:hover{
-   outline: .2rem solid;
+   outline: .2rem solid #222;
    outline-offset: 0;
 }
 
@@ -379,7 +378,7 @@ header .navbar ul li a:hover{
 .container .products-container .product h3{
    padding:.5rem 0;
    font-size: 2rem;
-   color: #ADC4CE;
+   color:#444;
 }
 .container .products-container .product h2{
    padding:.5rem 0;
@@ -388,7 +387,7 @@ header .navbar ul li a:hover{
 }
 
 .container .products-container .product:hover h3{
-   color:#FF4F5B;
+   color:#27ae60;
 }
 
 .container .products-container .product .price{
@@ -410,8 +409,7 @@ header .navbar ul li a:hover{
 .products-preview .preview{
    display: none;
    padding:2rem;
-   text-align: left;
-   
+   text-align: center;
    background: #fff;
    position: relative;
    margin:8rem;
@@ -442,7 +440,6 @@ header .navbar ul li a:hover{
    color:#444;
    padding:.5rem 0;
    font-size: 2.5rem;
-   text-align: center;
 }
 
 .products-preview .preview .stars{
@@ -451,13 +448,12 @@ header .navbar ul li a:hover{
 }
 
 .products-preview .preview .stars i{
-   color:#FF4F5B;
+   color:#27ae60;
 }
 
 .products-preview .preview .stars span{
    color:#999;
 }
-
 
 .products-preview .preview p{
    line-height: 1.5;
@@ -466,84 +462,46 @@ header .navbar ul li a:hover{
    color:#777;
 }
 
-.products-preview .preview .stars ul {
-  margin-left: 0;
-  padding-left: 0;
+.products-preview .preview .stars  li {
+   margin-bottom: 0.5rem;
+   font-size: 1.2rem;
+   
+   left: 4rem; /* Adding some space between list items */
 }
-
-.products-preview .preview .stars ol {
-  margin-left: 1rem;
-  padding-left: 0;
-  list-style-position: inside; /* Adjust the list item marker position */
-}
-
-
-.products-preview .preview .stars li {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  position: relative; /* Add relative positioning for arrow */
-  font-family: 'Skygraze', sans-serif; /* Apply the custom font */
-  padding-left: 2rem; /* Add left padding to create space for the arrow */
-}
-
-.products-preview .preview .stars li:before {
-  margin-right: 10px; /* Adjust the spacing between the arrow and the list item text */
-  position: absolute;
-  left: 1rem; /* Increase the spacing between the arrow and the text */
-}
-
 
 .products-preview .preview .price{
    padding:1rem 0;
-   text-align: center;
    font-size: 2.5rem;
    color:#27ae60;
 }
 
-
-
-
-
-.products-preview .preview .buttons {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
+.products-preview .preview .buttons{
+   display: flex;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
 }
 
-.products-preview .preview .buttons a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-  padding: 1rem;
-  font-size: 1.8rem;
-  color: #444;
-  border: .1rem solid #444;
-  text-align: left;
-  position: relative;
+.products-preview .preview .buttons a{
+   flex:1 1 16rem;
+   padding:1rem;
+   font-size: 1.8rem;
+   color:#444;
+   border:.1rem solid #444;
 }
 
-.products-preview .preview .buttons a .fas.fa-phone {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 1.2rem;
-  margin: 0.5rem; /* Add spacing between the icon and the edges of the button */
+.products-preview .preview .buttons a.cart{
+   background: #444;
+   color:#fff;
 }
 
-.products-preview .preview .buttons a.cart {
-  background: #444;
-  color: #fff;
+.products-preview .preview .buttons a.cart:hover{
+   background: #111;
 }
 
-.products-preview .preview .buttons a.cart:hover {
-  background: #111;
-}
-
-.products-preview .preview .buttons a.buy:hover {
-  background: #444;
-  color: #fff;
+.products-preview .preview .buttons a.buy:hover{
+   background: #444;
+   color:#fff;
 }
 
 
@@ -890,3 +848,4 @@ header .navbar ul li a:hover{
     }
 
 }
+
