@@ -504,48 +504,34 @@ header .navbar ul li a:hover{
 
 
 
-.products-preview .preview .buttons {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
+.products-preview .preview .buttons{
+   display: flex;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
 }
 
-.products-preview .preview .buttons a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-  padding: 1rem;
-  font-size: 1.8rem;
-  color: #444;
-  border: .1rem solid #444;
-  text-align: left;
-  position: relative;
+.products-preview .preview .buttons a{
+   flex:1 1 16rem;
+   padding:1rem;
+   font-size: 1.8rem;
+   color:#444;
+   border:.1rem solid #444;
 }
 
-.products-preview .preview .buttons a .fas.fa-phone {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 1.2rem;
-  margin: 0.5rem; /* Add spacing between the icon and the edges of the button */
+.products-preview .preview .buttons a.cart{
+   background: #444;
+   color:#fff;
 }
 
-.products-preview .preview .buttons a.cart {
-  background: #444;
-  color: #fff;
+.products-preview .preview .buttons a.cart:hover{
+   background: #111;
 }
 
-.products-preview .preview .buttons a.cart:hover {
-  background: #111;
+.products-preview .preview .buttons a.buy:hover{
+   background: #444;
+   color:#fff;
 }
-
-.products-preview .preview .buttons a.buy:hover {
-  background: #444;
-  color: #fff;
-}
-
 
 
 
