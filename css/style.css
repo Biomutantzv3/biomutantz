@@ -340,7 +340,7 @@ header .navbar ul li a:hover{
 
 .container .title{
    font-size: 3.5rem;
-   color:#444;
+   color:white;
    margin-bottom: 3rem;
    text-transform: uppercase;
    text-align: center;
@@ -378,7 +378,7 @@ header .navbar ul li a:hover{
 .container .products-container .product h3{
    padding:.5rem 0;
    font-size: 2rem;
-   color:#444;
+   color:sandybrown;
 }
 .container .products-container .product h2{
    padding:.5rem 0;
@@ -387,7 +387,7 @@ header .navbar ul li a:hover{
 }
 
 .container .products-container .product:hover h3{
-   color:#27ae60;
+   color:#FF4F5B;
 }
 
 .container .products-container .product .price{
@@ -448,7 +448,7 @@ header .navbar ul li a:hover{
 }
 
 .products-preview .preview .stars i{
-   color:#27ae60;
+   color:#FF4F5B;
 }
 
 .products-preview .preview .stars span{
@@ -472,7 +472,7 @@ header .navbar ul li a:hover{
 .products-preview .preview .price{
    padding:1rem 0;
    font-size: 2.5rem;
-   color:#27ae60;
+   color:#FF4F5B;
 }
 
 .products-preview .preview .buttons{
@@ -848,4 +848,3 @@ header .navbar ul li a:hover{
     }
 
 }
-
