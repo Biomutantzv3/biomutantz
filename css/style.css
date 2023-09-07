@@ -442,6 +442,7 @@ header .navbar ul li a:hover{
    font-size: 2.5rem;
 }
 
+
 .products-preview .preview .stars{
    padding:1rem 0;
    font-size: 1.7rem;
@@ -455,6 +456,7 @@ header .navbar ul li a:hover{
    color:#999;
 }
 
+
 .products-preview .preview p{
    line-height: 1.5;
    padding:1rem 0;
@@ -462,12 +464,32 @@ header .navbar ul li a:hover{
    color:#777;
 }
 
-.products-preview .preview .stars  li {
-   margin-bottom: 0.5rem;
-   font-size: 1.2rem;
-   
-   left: 4rem; /* Adding some space between list items */
+.products-preview .preview .stars ul {
+  margin-left: 0;
+  padding-left: 0;
 }
+
+.products-preview .preview .stars ol {
+  margin-left: 1rem;
+  padding-left: 0;
+  list-style-position: inside; /* Adjust the list item marker position */
+}
+
+
+.products-preview .preview .stars li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  position: relative; /* Add relative positioning for arrow */
+  font-family: 'Skygraze', sans-serif; /* Apply the custom font */
+  padding-left: 2rem; /* Add left padding to create space for the arrow */
+}
+
+.products-preview .preview .stars li:before {
+  margin-right: 10px; /* Adjust the spacing between the arrow and the list item text */
+  position: absolute;
+  left: 1rem; /* Increase the spacing between the arrow and the text */
+}
+
 
 .products-preview .preview .price{
    padding:1rem 0;
