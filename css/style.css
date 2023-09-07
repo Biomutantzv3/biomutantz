@@ -517,13 +517,23 @@ header .navbar ul li a:hover{
    font-size: 1.8rem;
    color:#444;
    border:.1rem solid #444;
+   
 }
 
 .products-preview .preview .buttons a.fas fa-phone{
   text-align: right;
   justify-content: right;
   align-items: right;
+ 
 }
+
+.special-icon {
+  /* Your styles for the phone icon here */
+  float: right; /* To move the icon to the right */
+  margin-left: 5px; /* Add some spacing between the icon and text */
+  /* Other styles like color, font-size, etc. */
+}
+
 
 
 
