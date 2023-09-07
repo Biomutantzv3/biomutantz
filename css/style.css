@@ -519,6 +519,21 @@ header .navbar ul li a:hover{
    border:.1rem solid #444;
 }
 
+.products-preview .preview .buttons a.fas fa-phone{
+  text-align: right;
+  justify-content: right;
+  align-items: right;
+}
+.link i {
+  /* Your styles here */
+  float: right; /* To move the icon to the right */
+  margin-left: 5px; /* Add some spacing between the icon and text */
+  /* Other styles like color, font-size, etc. */
+}
+
+
+
+
 .products-preview .preview .buttons a.cart{
    background: #444;
    color:#fff;
