@@ -524,13 +524,6 @@ header .navbar ul li a:hover{
   justify-content: right;
   align-items: right;
 }
-.link i {
-  /* Your styles here */
-  float: right; /* To move the icon to the right */
-  margin-left: 5px; /* Add some spacing between the icon and text */
-  /* Other styles like color, font-size, etc. */
-}
-
 
 
 
