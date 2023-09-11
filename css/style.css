@@ -48,10 +48,12 @@ html::-webkit-scrollbar-thumb{
 }
 
 body {
-  background: url(../images/home-bg.jpg);
+  background: url(../images/home-bg.jpg)fixed;
   background-attachment: fixed;
   background-position: center;
   overflow-x: hidden;
+  margin-top: 5rem;
+  background-size: cover;
 }
 section{
     min-height: 100vh;
