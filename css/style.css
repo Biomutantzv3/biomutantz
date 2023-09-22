@@ -613,6 +613,22 @@ header .navbar ul li a:hover{
   word-wrap: break-word;
   margin-bottom: 3rem;
 }
+.title p{
+  display: inline-block;
+  padding: 20px;
+  color: #e4d7d7;
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 1.2px;
+  word-spacing: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  text-transform: uppercase;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  margin-bottom: 3rem;
+}
 
 .wrapper .card_container{
   position: relative;
