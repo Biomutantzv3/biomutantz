@@ -614,11 +614,21 @@ header .navbar ul li a:hover{
   margin-bottom: 3rem;
 }
 .title p{
-   text-align: justify;
+  text-align: justify;
   font-size: 1.5rem;
   color: white;
   padding: 1rem 0;
   line-height: 2;
+  display: inline-block;
+  padding: 20px;
+  color: #e4d7d7;
+  
+  letter-spacing: 1.2px;
+  word-spacing: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  
+  margin-bottom: 3rem;
 }
 
 .wrapper .card_container{
